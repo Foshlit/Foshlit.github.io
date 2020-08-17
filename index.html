@@ -406,14 +406,14 @@
 
                     <!-- Request Form -->
                     <div class="form-container">
-                        <form id="requestForm" data-toggle="validator" data-focus="false">
+                        <form action="https://formspree.io/mjvadbqo" method="POST">
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="rname" name="rname" required>
                                 <label class="label-control" for="rname">Full name</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control-input" id="remail" name="remail" required>
+                                <input type="email" class="form-control-input" id="remail" name="_replyto" required>
                                 <label class="label-control" for="remail">Email</label>
                                 <div class="help-block with-errors"></div>
                             </div>
@@ -422,17 +422,8 @@
                                 <label class="label-control" for="rphone">Phone</label>
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <div class="form-group">
-                                <select class="form-control-select" id="rselect" required>
-                                    <option class="select-option" value="" disabled selected>Interested in...</option>
-                                    <option class="select-option" value="Personal Loan">Starter</option>
-                                    <option class="select-option" value="Car Loan">Medium</option>
-                                    <option class="select-option" value="House Loan">Complete</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
                             <div class="form-group checkbox">
-                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I agree with Evolo's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a>
+                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I agree that the details above is true
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
