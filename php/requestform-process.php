@@ -19,6 +19,12 @@ if (empty($_POST["phone"])) {
     $phone = $_POST["phone"];
 }
 
+if (empty($_POST["select"])) {
+    $errorMSG = "Select is required ";
+} else {
+    $select = $_POST["select"];
+}
+
 if (empty($_POST["terms"])) {
     $errorMSG = "Terms is required ";
 } else {
@@ -26,7 +32,7 @@ if (empty($_POST["terms"])) {
 }
 
 $EmailTo = "navendupottekkat@gmail.com";
-$Subject = "New meeting request from Foshlit";
+$Subject = "New meeting request from Evolo landing page";
 
 // prepare email body text
 $Body = "";
@@ -39,6 +45,8 @@ $Body .= "\n";
 $Body .= "Phone: ";
 $Body .= $phone;
 $Body .= "\n";
+$Body .= "Package: ";
+$Body .= $select;
 $Body .= "\n";
 $Body .= "Terms: ";
 $Body .= $terms;
